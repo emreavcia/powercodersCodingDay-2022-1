@@ -90,13 +90,15 @@ nextBtn.addEventListener("click", () => {
 const submitBtn = document.getElementById("submit-btn")
 const radios = document.querySelectorAll("input[type='radio']")
 
+
 submitBtn.addEventListener("click", () => {
     radios.forEach(radio => {
-        if (radio.checked && radio.id == "radio_" + questionList[increment].correct) {
-            console.log(radio.id == "radio_" + questionList[increment].correct)
-            radio.style.color = "green"
+        if (radio.id == "radio_" + questionList[increment].correct) {
+            let label = document.querySelector(`label[for='${radio.id}']`)
+            label.style.backgroundColor = "green"
         } else {
-            radio.style.color = "red"
+            let label = document.querySelector(`label[for='${radio.id}']`)
+            label.style.backgroundColor = "red"
         }
     })
 })
