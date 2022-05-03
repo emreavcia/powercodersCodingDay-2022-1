@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.d-flex {
+  display: flex;
+}
+body {
+  font-family: sans-serif;
+}
+
+/* Header start */
+
+header {
+  margin: 1em 3em;
+}
+
+header h1 {
+  margin-left: 0.5em;
+  font-size: 1.6em;
+  color: rgba(0, 0, 0, 0.549);
+  font-style: italic;
+}
+
+header img {
+  margin-left: 0.5em;
+}
+
+/* Header end */
+
+main {
+  margin: 1em 3em 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.27);
+}
+
+.link-container {
+  flex-direction: column;
+  width: 20%;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.299);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+  font-size: 1.2em;
+  padding: 0.5em 3em 0.5em 0.5em;
+}
+.blog-container {
+  padding: 1em 3em 3em;
+  flex: 1;
+  border: 1px solid rgba(128, 128, 128, 0.364);
+  border-top: 0;
+  background-color: rgba(213, 255, 255, 0.238);
+}
+
+.blog-container div {
+  border: 1px solid rgba(128, 128, 128, 0.351);
+  border-radius: 1px;
+  padding: 0.8em 0 1.5em 0.5em;
+  margin-bottom: 1em;
+  background-color: white;
+  box-shadow: 1px 1px rgba(128, 128, 128, 0.166);
+}
+
+.blog-container h2 {
+  margin-bottom: 0.5em;
+  color: rgba(9, 233, 174, 0.595);
+}
+.blog-container p {
+  color: rgba(128, 128, 128, 0.503);
+}
+
+.advertisement {
+  width: 10%;
+  margin: 1em 0 0 1em;
+}
+
+.advertisement div {
+  border: 1px solid rgba(128, 128, 128, 0.403);
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  width: 5em;
+  color: rgba(128, 128, 128, 0.567);
+}
+
+.advertisement div:first-of-type {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.856);
+  text-align: right;
+  margin: 0 3em;
+  padding: 2em 1em 2em;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  padding: 0.5em 0.8em;
+}
